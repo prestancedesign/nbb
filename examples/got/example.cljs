@@ -7,3 +7,4 @@
                    (.post "https://httpbin.org/anything" (clj->js {:json {:hello "world"}}))
                    .json)]
   (js/console.log (j/get result :data)))
+;;=> {"hello":"world"}
